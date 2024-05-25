@@ -57,7 +57,6 @@ span {
   text-decoration: none;
   color: var(--cor-escura);
   font-weight: 600;
-  text-transform: uppercase;
   font-size: 0.9rem;
 }
 
@@ -97,7 +96,6 @@ span {
   transform: translate(-50%, -50%);
   width: 50%;
   font-size: 2rem;
-  text-transform: uppercase;
   z-index: 2;
 }
 
@@ -147,7 +145,6 @@ span {
 .about-text-container h3 {
   color: var(--cor-dourada);
   font-size: 1.5rem;
-  text-transform: uppercase;
 }
 
 .about-text-container a {
@@ -171,4 +168,72 @@ span {
   width: 300px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* GALERIA */
+
+#gallery {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gallery h2 {
+  color: var(--cor-dourada);
+}
+
+#gallery p {
+  font-weight: 300;
+  margin-bottom: 4rem;
+  line-height: 40px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.gallery-card {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+}
+
+.card1 {
+  background-image: url(../assets/img/kit-pickle-v2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card1:hover {
+  background-color: #161716;
+}
+
+.gallery-container > :nth-child(2) {
+  background-image: url(../assets/img/kit-aleyna.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery-container > :nth-child(3) {
+  background-image: url(../assets/img/kit-willa.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery-container > :nth-child(4) {
+  background-image: url(../assets/img/kit-laura2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery-container > :nth-child(5) {
+  background-image: url(../assets/img/kit-pickle.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery-container > :nth-child(6) {
+  background-image: url(../assets/img/kit-micaiah.jpg);
+  background-size: cover;
+  background-position: center;
 }
