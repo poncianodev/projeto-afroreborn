@@ -8,6 +8,7 @@
   --cor-clara: #e6ddd3;
   --cor-escura: #161716;
   --cor-dourada: #cf9040;
+  --cor-dourada-clara: #bf9253;
   --cor-marrom: #6f5244;
   --cor-vermelha: #ff0000;
   --border-radius: 10px;
@@ -28,16 +29,27 @@ span {
 
 /* HEADER */
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
 .header-nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 4rem;
+  padding: 0 4rem;
+  background-color: var(--cor-clara);
+  height: 3.5rem;
+  box-shadow: 0px 3px 10px -6px rgba(0, 0, 0, 0.835);
+  transition: 0.5s ease;
 }
 
 .header-logo {
   padding-top: 0.5rem;
-  width: 100px;
+  width: 70px;
 }
 
 .header-menu {
@@ -65,18 +77,29 @@ span {
   color: var(--cor-dourada);
 }
 
+.header-menu.active {
+  display: flex;
+}
+
+.mobile-menu-container {
+  display: none;
+}
+
+.mobile-menu-container i {
+  font-size: 1.5rem;
+  color: var(--cor-marrom);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 /* MAIN */
 
 /* HERO */
 
 #hero {
   width: 100%;
-  height: 30rem;
+  height: 100vh;
   background-color: var(--cor-escura);
   position: relative;
-  background-image: url(../assets/img/bg-generico.png);
-  background-position: center;
-  background-size: cover;
 }
 
 #hero::before {
@@ -84,8 +107,8 @@ span {
   z-index: 1;
   content: "";
   width: 100%;
-  height: 30rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #hero h1 {
@@ -98,6 +121,19 @@ span {
   width: 50%;
   font-size: 2rem;
   z-index: 2;
+}
+
+.hero-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40rem;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .scroll-down {
@@ -150,7 +186,7 @@ span {
 
 .about-text-container a {
   padding: 0.8rem;
-  max-width: 35%;
+  max-width: 55%;
   background-color: var(--cor-dourada);
   text-decoration: none;
   color: var(--cor-clara);
@@ -166,6 +202,7 @@ span {
 }
 
 .inarai-home-image {
+  max-width: 100%;
   width: 300px;
   border-radius: var(--border-radius);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -195,7 +232,7 @@ span {
 
 .gallery-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -231,7 +268,7 @@ span {
   background-position: center;
 }
 .gallery-container > :nth-child(5) {
-  background-image: url(../assets/img/kit-pickle.jpg);
+  background-image: url(../assets/img/kit-katie-marie2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -371,7 +408,6 @@ span {
   background-image: url(../assets/img/female-artist-painting-indoors.jpg);
   background-size: cover;
   background-position: center;
-
   margin: 5rem 0 0;
   position: relative;
   width: 100%;
@@ -418,3 +454,162 @@ span {
 }
 
 /* FOOTER */
+
+footer {
+  background-color: var(--cor-marrom);
+  padding: 2rem 0;
+}
+
+.footer-container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 300px;
+}
+
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--cor-dourada-clara);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.social-links-container h4 {
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+}
+
+.social-links i {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background-color: var(--cor-clara);
+  border-radius: 100%;
+}
+
+footer hr {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid var(--cor-dourada-clara);
+  opacity: 0.5;
+}
+
+.footer-container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--cor-clara);
+}
+
+.footer-container2 a {
+  text-decoration: none;
+  color: #c5f600;
+}
+
+.footer-container2 a:hover {
+  color: var(--cor-escura);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+  .gallery-card {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    background-color: var(--cor-marrom);
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .header-menu a {
+    color: var(--cor-clara);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-menu li {
+    margin: 1rem 0;
+  }
+
+  .mobile-menu-container {
+    display: block;
+    cursor: pointer;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text-container {
+    gap: 2rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    .gallery-card {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  #gallery {
+    margin: 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .inarai-home-image {
+    width: 250px;
+    margin: 0 1rem -1rem;
+  }
+
+  .gallery-card {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gallery-card {
+    width: 15rem;
+    height: 15rem;
+  }
+}
