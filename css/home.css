@@ -246,6 +246,7 @@ header {
   background-image: url(../assets/img/kit-pickle-v2.jpg);
   background-size: cover;
   background-position: center;
+  transition: 0.5s ease-in-out;
 }
 
 .card1:hover {
@@ -256,26 +257,42 @@ header {
   background-image: url(../assets/img/kit-aleyna.jpg);
   background-size: cover;
   background-position: center;
+  transition: 0.5s ease-in-out;
 }
+
 .gallery-container > :nth-child(3) {
   background-image: url(../assets/img/kit-willa.jpg);
   background-size: cover;
   background-position: center;
+  transition: 0.5s ease-in-out;
 }
+
 .gallery-container > :nth-child(4) {
   background-image: url(../assets/img/kit-laura2.jpg);
   background-size: cover;
   background-position: center;
+  transition: 0.5s ease-in-out;
 }
 .gallery-container > :nth-child(5) {
   background-image: url(../assets/img/kit-katie-marie2.jpg);
   background-size: cover;
   background-position: center;
+  transition: 0.5s ease-in-out;
 }
 .gallery-container > :nth-child(6) {
   background-image: url(../assets/img/kit-micaiah.jpg);
   background-size: cover;
   background-position: center;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-container > :nth-child(2):hover,
+.gallery-container > :nth-child(3):hover,
+.gallery-container > :nth-child(4):hover,
+.gallery-container > :nth-child(5):hover,
+.gallery-container > :nth-child(6):hover,
+.card1:hover {
+  transform: scale(1.02);
 }
 
 /* ENCOMENDAS */
@@ -381,6 +398,34 @@ header {
   border: 1px solid var(--cor-marrom);
 }
 
+.feedback-image.second {
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  width: 120px;
+  height: 120px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  background-image: url(../assets/img/cliente2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--cor-marrom);
+}
+
+.feedback-image.third {
+  position: absolute;
+  top: -70px;
+  left: 100px;
+  width: 120px;
+  height: 120px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  background-image: url(../assets/img/cliente3.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--cor-marrom);
+}
+
 .feedback-text {
   display: flex;
   justify-content: center;
@@ -435,7 +480,7 @@ header {
 }
 
 #cta h2 {
-  z-index: 999;
+  z-index: 98;
   color: var(--cor-clara);
   max-width: 70%;
   font-size: 1.8rem;
@@ -496,11 +541,18 @@ footer {
   gap: 1rem;
 }
 
-.social-links i {
+.social-links a i {
+  color: var(--cor-dourada-clara);
+  text-decoration: none;
   padding: 0.8rem;
   font-size: 1.2rem;
   background-color: var(--cor-clara);
   border-radius: 100%;
+  transition: 0.3s ease;
+}
+
+.social-links a i:hover {
+  color: var(--cor-marrom);
 }
 
 footer hr {
@@ -522,10 +574,11 @@ footer hr {
 .footer-container2 a {
   text-decoration: none;
   color: #c5f600;
+  transition: 0.3s ease;
 }
 
 .footer-container2 a:hover {
-  color: var(--cor-escura);
+  color: #efffb1;
 }
 
 /* RESPONSIVE */
@@ -642,6 +695,20 @@ footer hr {
   .order-card-text p {
     font-size: 1rem;
   }
+
+  #cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-container1,
+  .footer-container2 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-logo {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -678,9 +745,13 @@ footer hr {
   .order-card-text p {
     font-size: 0.9rem;
   }
-  
+
   .feedback-text p {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  #cta h2 {
+    font-size: 1.5rem;
   }
 }
 
