@@ -1,6 +1,131 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-clara: #e6ddd3;
+  --cor-escura: #161716;
+  --cor-dourada: #cf9040;
+  --cor-dourada-clara: #bf9253;
+  --cor-marrom: #6f5244;
+  --cor-vermelha: #ff0000;
+  --border-radius: 10px;
+}
+
+body {
+  background-color: var(--cor-clara);
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span {
+  color: var(--cor-dourada);
+}
+
+/* MAIN  */
+
+/* HERO */
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  background-image: url(../assets/img/sobre-mim-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#hero::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#hero h1 {
+  color: var(--cor-dourada-clara);
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+/* ABOUT ME */
+
+#about-me {
+  margin: 5rem 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.about-container img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.about-text {
+  width: 40%;
+}
+
+/* CERTIFICATES */
+
+#certificates {
+  margin: 5rem 0;
+}
+
+.section-heading {
+  color: var(--cor-dourada);
+  text-align: center;
+}
+
+.section-sub-heading {
+  font-weight: 300;
+  margin: 1rem 0 4rem;
+  text-align: center;
+}
+
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.certificates-cards {
+  background-color: #333;
+  width: 17rem;
+  height: 20rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.certificates-cards img {
+  object-fit: cover;
+  width: 100%;
+  height: 85%;
+  border-radius: 10px 10px 0 0;
+}
+
+.certificates-cards p {
+  /* margin-top: 8px; */
+  font-weight: 600;
+  text-align: center;
+  color: var(--cor-clara);
+}
