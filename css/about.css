@@ -64,7 +64,7 @@ span {
 /* ABOUT ME */
 
 #about-me {
-  margin: 5rem 0;
+  margin: 5rem 2rem;
 }
 
 .about-container {
@@ -86,7 +86,7 @@ span {
 /* CERTIFICATES */
 
 #certificates {
-  margin: 5rem 0;
+  margin: 5rem 2rem;
 }
 
 .section-heading {
@@ -128,4 +128,29 @@ span {
   font-weight: 600;
   text-align: center;
   color: var(--cor-clara);
+}
+
+@media screen and (max-width: 990px) {
+  .about-container {
+    gap: 2rem;
+  }
+
+  .about-text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container img {
+    order: -1;
+  }
+
+  .about-text {
+    padding-top: 1rem;
+    width: 100%;
+  }
 }
