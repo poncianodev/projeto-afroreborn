@@ -3,10 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afro Reborn | Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7d03cfc5b1.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Afro Reborn | Contato</title>
   </head>
   <body>
+    <header>
+      <nav class="header-nav">
+        <img
+          src="../assets/img/logo-afroreborn.png"
+          alt=""
+          class="header-logo"
+        />
+
+        <ul class="header-menu">
+          <li><a href="../index.html">INÍCIO</a></li>
+          <li><a href="#">SOBRE A ARTISTA</a></li>
+          <li><a href="../index.html/#order">ENCOMENDAS</a></li>
+          <li><a href="./contact.html">CONTATO</a></li>
+        </ul>
+
+        <div class="mobile-menu-container">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>CONTATO</h1>
+      </section>
+
+      <section id="contact">
+        <div class="contact-us-container">
+          <div class="contact-us-header">
+            <h2 class="section-heading">Contate-nos</h2>
+            <p class="section-sub-heading">
+              Deixa sua mensagem que cuidaremos do resto!
+            </p>
+          </div>
+
+          <div class="contact-info-container">
+            <a href="" class="contact-info">
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>19 99330-6030</p>
+            </a>
+            <a href="" class="contact-info">
+              <i class="fa-solid fa-envelope"></i>
+              <p>afroreborn@gmail.com</p>
+            </a>
+            <a href="" class="contact-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Porto Ferreira - SP</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <form method="post">
+            <div class="form-name">
+              <div class="input-col">
+                <label for="first-name">Nome</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Seu Nome"
+                  required
+                />
+              </div>
+              <div class="input-col">
+                <label for="last-name">Sobrenome</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Seu Sobrenome"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-col">
+              <label for="phone">WhatsApp</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Seu número de WhatsApp"
+                required
+              />
+            </div>
+            <div class="input-col">
+              <label for="message">Mensagem</label>
+              <textarea
+                name="message"
+                rows="4"
+                cols="50"
+                placeholder="Adicione uma mensagem"
+              ></textarea>
+            </div>
+
+            <input
+              type="submit"
+              value="Enviar Mensagem"
+              onclick=""
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container1">
+        <img
+          src="../assets/img/logo-afroreborn-escrita.svg"
+          alt="Logo da Afroreborn apenas escrito"
+          class="footer-logo"
+        />
+
+        <div class="social-links-container">
+          <h4>Me siga nas redes sociais</h4>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/afroreborn" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="mailto:afroreborn@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="https://www.instagram.com/afroreborn/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-container2">
+        <p>&copy; 2024 Afroreborn - Todos os direitos reservados.</p>
+
+        <p>
+          Desenvolvido por
+          <a href="https://www.linkedin.com/in/lucas-ponciano/" target="_blank"
+            >poncianodev</a
+          >
+        </p>
+      </div>
+    </footer>
     <script src="../js/main.js"></script>
   </body>
 </html>
