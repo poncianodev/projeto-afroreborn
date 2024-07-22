@@ -196,3 +196,38 @@ textarea {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 550px) {
+  #contact {
+    margin: 5rem 1rem;
+  }
+
+  .form-name {
+    flex-direction: column;
+  }
+
+  .form-container {
+    height: 100%;
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .contact-us-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-info p {
+    font-size: .8rem;
+  }
+}
