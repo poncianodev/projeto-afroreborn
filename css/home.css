@@ -423,7 +423,7 @@ span {
 }
 
 #cta a {
-  z-index: 999;
+  z-index: 99;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;

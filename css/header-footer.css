@@ -179,6 +179,8 @@ footer hr {
     background-color: var(--cor-marrom);
     width: 100%;
     padding: 1rem;
+    gap: 0;
+    box-shadow: rgba(0, 0, 0, 0.492) 0px 5px 15px;
   }
 
   .header-menu a {
