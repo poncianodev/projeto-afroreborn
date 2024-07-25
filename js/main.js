@@ -13,3 +13,4 @@ menuItems.forEach((item) => {
     headerMenu.classList.remove("active");
   });
 });
+

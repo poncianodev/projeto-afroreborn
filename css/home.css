@@ -574,6 +574,10 @@ span {
   #cta h2 {
     font-size: 1.5rem;
   }
+
+  .scroll-down {
+    left: 45%;
+  }
 }
 
 @media screen and (max-width: 320px) {
