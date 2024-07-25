@@ -22,7 +22,7 @@ E as cores branco gelo e preto são para dar contraste nas criações.
 <br>
 <br>
 
-![Paleta de Cores](https://github.com/poncianodev/projeto-afroreborn/blob/main/assets/img/PALETA.png)
+![Paleta de Cores](https://i.imgur.com/RP2ljzs.png)
 
 <br>
 
@@ -34,7 +34,7 @@ Este é o Style Guide que desenvolvi junto com a artista.
 <br>
 <br>
 
-![Style Guide](https://github.com/poncianodev/projeto-afroreborn/blob/main/assets/img/STYLEGUIDE.png)
+![Style Guide](https://i.imgur.com/HLaIjMr.png)
 
 <br>
 
@@ -55,7 +55,7 @@ Este é o Style Guide que desenvolvi junto com a artista.
 <br>
 <br>
 
-![Home](https://github.com/poncianodev/projeto-afroreborn/blob/main/assets/img/HOME.png)
+![Home](https://i.imgur.com/h4cpGqi.jpeg)
 
 <br>
 
@@ -70,7 +70,7 @@ Este é o Style Guide que desenvolvi junto com a artista.
 <br>
 <br>
 
-![Sobre mim](https://github.com/poncianodev/projeto-afroreborn/blob/main/assets/img/SOBRE-MIM.png)
+![Sobre mim](https://i.imgur.com/GdyH5Zc.png)
 
 <br>
 
@@ -84,7 +84,7 @@ Este é o Style Guide que desenvolvi junto com a artista.
 <br>
 <br>
 
-![Contato](https://github.com/poncianodev/projeto-afroreborn/blob/main/assets/img/CONTATO.png)
+![Contato](https://i.imgur.com/J5XiZTS.png)
 
 <br>
 
